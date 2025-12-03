@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <style>
+        body{
+
+            background: rgb(247,247,247);
+            background: linear-gradient(90deg, rgb(195, 227, 243) 1%, rgba(126,199,246,1) 46%, rgb(195, 227, 243) 100%);
+        } 
+        .container{
+            display: flex;
+            align-items: center;
+            margin:1px;
+            border: 1px ;
+        }
+        img{
+            width: 130px;
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h2{
+            margin: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+         *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header{
+            width: 100px;
+            height: 100vh;
+        }
+        .side-nav{
+            width: 250px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 30px 15px;
+            margin: 0 20px;
+            margin-bottom: 100px;
+        }
+        .user{
+            display: flex;
+            align-items:first baseline;
+            font-size: 100px;
+            padding: 15px;
+            border-radius: 8px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .user h2{
+            font-size: 20px;
+            white-space: nowrap;
+            
+        }
+        .user-img{
+            width:150px;
+            border: 1px solid;
+            border-radius:10px;
+          
+        }
+        ul{
+            list-style: none;
+            padding: 0 15px;
+           
+          
+        }
+        ul li{
+            font-size:larger;
+            margin: 30px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+        }
+        ul li img{
+            width: 30px;
+            margin-right: 10px;
+        }
+        ul li p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        ul li p:hover{
+            
+            font-size: 110%;
+        }
+       h2 a{
+        text-decoration: solid;
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       h2 a:hover{
+        background-color:  #f6f60b;
+       }
+       .search-form {
+        display: flex;
+        align-items: center;
+     }
+.search-form input {
+  padding: 8px;
+  border: 1px solid  #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.search-form button {
+  padding: 9px 15px;
+  background-color: #101010;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color:  #007bff;
+}
+.side-nav a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0e0e0e;
+}
+.search-form p{
+    font-size: 17px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <form class="search-form">
+        <img src="images/puc_logo.png">
+        
+        <h2>Premier University  <br>
+        <p>Department of Computer Science & Engineering.</p>  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+       </h2>
+        <input type="text" placeholder="Search">
+            <button type="submit" class="fa-solid fa-magnifying-glass" name="search-box"></button>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         
+            <font size="5">
+            <a href="#">Noticeboard</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">Library</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://127.0.0.1:5500/calender.html">Calender</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://127.0.0.1:5500/Web_login.html">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </font>
+            <i class="fa-solid fa-bell"></i>
+        </form>
+    
+    </h2>
+    </div>
+    
+    <div class="header">
+    <div class="side-nav">
+        <div class="user">
+         <img src="images/puja.jpg" class="user-img">
+         <!-- <p>Department of Computer Science & Engineering</p>
+         <p>Advisor: MD Hasan</p> -->
+    </div>
+    <font size="4" color="black">
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><b>Puja Dewanjee</b></p><br>
+    <p><b>Roll:0222310005101028</b></p><br>
+    </font>
+      <font size="3" color="black">
+      <ul>
+        <li><img src="images/icons8-home-50.png"><p>Home</p></li></b>
+        <li><img src="images/icons8-enrollment-64.png"><p><a href="http://127.0.0.1:5500/Enroll.html">Enrollment</a></p></li>
+        <li><img src="images/icons8-routine-64.png"><p><a href="http://127.0.0.1:5500/Routine.html">Class Routine</a></p></li>
+        <li><img src="images/icons8-student-registration-50.png"><p>Registration</p></li>
+        <li><img src="images/icons8-accounts-32.png"><p>Student Accounts</p></li>
+        <li><img src="images/icons8-evaluation-50.png"><p>Evaluation</p></li>
+        <li><img src="images/icons8-report-card-50.png"><p><a href="http://127.0.0.1:5500/Result.html">Detailed Result</a></p></li>
+        <li><img src="images/icons8-report-card-50 (1).png"><p>Reports</p></li>
+       </ul>
+    </font>
+    </div>
+    </div>
+</body>
+</html>

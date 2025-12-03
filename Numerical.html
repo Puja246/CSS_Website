@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards2{
+            width: 60%;
+            margin: 100px auto 300px;
+            display: flex;
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+        .card2{
+            padding: 100px;
+            box-shadow: 0 0 .4rem .4rem rgb(0,0,0,0.2);
+            text-align: center;
+            margin: 160px ;
+            margin-top: 90px;
+        }
+        .card2-heading{
+            color: blue;
+            margin-bottom: 8px;
+            font-size: 30px;
+        }
+        .card2-body{
+            text-align: center;
+            
+        }
+    .card2 button{
+    margin-left: 0px;
+    border: 2px solid ;
+    color: white;
+    border-radius: 100px;
+    margin-top: 20px;
+    background-color: #172c3e;
+    width: 90px;
+    padding:8px;
+    font-size: large;
+    font-weight: bold;
+}
+a{
+    text-decoration-line:none;
+    color: black;
+    font-size: large;
+    margin: 0;
+    font-weight: bold;
+    
+}
+.card2 p{
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+    <div class="cards2">
+        <div class="card2">
+           <h3 class="card2-heading">Numerical Methods</h3>
+           <p class="card2-body"><a href="images/Bisection Method.pdf">1. <u>Lab Report 1</u></a></p>
+           <p class="card2-body"><a href="images/Falsi copy 2.pdf">2. <u>Lab Report 2</u></a></p>
+           <a id="view"href="http://127.0.0.1:5500/Enrollcourse.html">
+            <button type="button" onclick="document.getElementById('view').href='http://127.0.0.1:5500/Enrollcourse.html'">Back</button></a>
+        </div>
+        </div>
+</body>
+</html>

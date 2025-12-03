@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier University</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    /* background-color:#172c3e;
+    margin: auto;
+    border: 0px solid;
+    display: flex;
+    align-items: center;  
+    height: 90px; */
+}
+.sidebar {
+    width: 190px;
+    background-color: #172c3e;
+    color: white;
+    padding:40px;
+    height: 160vh;
+}
+.sidebar img {
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.sidebar {
+    text-align: center;
+}
+.sidebar nav ul{
+    list-style-type: none;
+    padding:15px 0px;  
+
+}
+/* .sidebar p, .sidebar nav ul {
+    margin: 10px 0;
+} */
+/* .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+} */
+.sidebar nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.sidebar nav ul li{
+    font-size:20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    background-color: #20384d;
+    
+}
+
+p{
+    margin-top: auto;
+    font-size: 20px;
+}
+.sidebar nav ul li img{
+    width: 30px;
+    background-color: white;
+    margin: 0;
+}
+.sidebar nav ul li p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 10px;
+            font-size: 100%;
+        }
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    height: 1px;
+    background-color: white;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+.search i{
+    font-size: 20px;
+    color: black;
+}
+.search input{
+    border: none;
+    outline: none;
+   
+}
+
+.upperbar {
+    background-color: #172c3e;
+    padding: 10px;
+    display: flex;
+   justify-content: end;
+    align-items: center;
+    color: white;
+}
+.logo img{
+    margin-right: 100px;
+    margin-top: -40px;
+    margin-left: -80px;
+}
+ .logo h3{
+    color: rgb(244, 243, 243);
+    margin-left:0px;
+    margin-top: -70px;
+    margin-right: -70px;
+    font-size: 20px;
+}
+.upperbar a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 90px;
+}
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.cards{
+            width: 60%;
+            margin-left: 80px;
+            margin-top: 100px;
+            display: flex;
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+        .card{
+            width: 300%;
+            padding: 1rem;
+            box-shadow: 0 0 .4rem .4rem rgb(0,0,0,0.2);
+            transition: .4s ease-in;
+            text-align: center;
+            margin: 0 5px;
+            border-radius: 10px;
+        }
+        .card:hover{
+            background: rgb(210,210,210);
+        }
+        .card-heading{
+            color:black;
+            margin-bottom: 8px;
+            font-size: 23px;
+        }
+        .card-body{
+            text-align: center;
+            
+        }
+    .card button{
+    margin-left: 0px;
+    border: 2px solid ;
+    color: white;
+    border-radius: 100px;
+    background-color: #007bff;
+    background-color: #172c3e;
+    width: 80px;
+    padding:10px;
+    font-size: large;
+    font-weight: bold;
+}
+.welcome h1{
+    margin: 0;
+    margin-left: 10px;
+    color: #172c3e;
+    text-align: center;
+}
+.welcome h3{
+   text-align: center;
+    margin: 0;
+    font-size: 25px;
+    color: #172c3e;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#calendar {
+    margin-top: 50px;
+    width: 450px;
+    margin-left: 10px;
+}
+.notice-card {
+    width: 40%; /* Adjust width as needed */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    margin-top: 70px;
+
+}
+
+.notice-card ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.notice-card ul li {
+    margin: 10px 0;
+}
+.another-content {
+    display: flex;
+    justify-content: space-between;
+}
+.cards-content.events {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.tabs {
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    background-color: white;
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tab-button.active {
+    background-color: #172c3e;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .event-list {
+    margin-top: 10px;
+} */
+.tab-content{
+    /* width: 1%; /* Adjust width as needed */
+    margin-left: 0px;
+    margin-top: 10px; 
+}
+.events{
+    margin-top: 10px;
+}
+.event-item{
+    background-color: white;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-left:7px solid #172c3e ;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+.event-item2{
+    background-color: white;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-left:7px solid #172c3e ;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.event-item3{
+    background-color: white;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-left:7px solid #172c3e ;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.event-date {
+    color: rgb(88, 87, 87);
+    margin-right: 10px;
+}
+
+.event-name {
+    
+    color:#172c3e;
+    font-weight: bold;
+    font-size: 15px;
+}
+.cards-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+            <img src="images/puc_logo.png" alt="logo"><br><br>
+            <h3>Premier University </h3>&nbsp;&nbsp;&nbsp;
+           </div>
+            <div class="profile">
+            <img src="images/puja.jpg" alt="Profile Picture">
+            &nbsp; &nbsp;  &nbsp;<h3>Puja Dewanjee</h3>
+            <h4>ID: 0222310005101028</h4>
+            <h4>Advisor: MD. Hasan</h4>
+            <h4>Batch: 43rd</h4>
+            </div>
+            <nav>
+            
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><p>Home</p></li></b>
+                    <li><i class="fa-solid fa-user"></i><p>My Profile</p></li></b>
+                    <li><i class="fa-solid fa-graduation-cap"></i></i><p><a href="http://127.0.0.1:5500/Enroll.html">Enrollment</a></p></li>
+                    <li><i class="fa-brands fa-readme"></i><p><a href="http://127.0.0.1:5500/courses.html">Courses</a></p></li>
+                    <li><i class="fa-solid fa-calendar-week"></i><p><a href="http://127.0.0.1:5500/Routine.html">Class Routine</a></p></li>
+                    <li><i class="fa-solid fa-address-card"></i><p>Registration</p></li>
+                    <li><i class="fa-solid fa-user-graduate"></i><p>Student&nbsp;Accounts</p></li>
+                    <li><i class="fa-solid fa-chart-simple"></i><p>Evaluation</p></li>
+                    <li><i class="fa-solid fa-table-list"></i><p><a href="http://127.0.0.1:5500/Result.html">Detailed Result</a></p></li>
+                    <li><i class="fa-solid fa-square-poll-horizontal"></i><p>Reports</p></li>
+                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i> <p><a href="http://127.0.0.1:5500/Web_login.html">Logout</a></p></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="main-content">
+            <div class="upperbar">
+                <!-- Upper bar content -->
+                <div class="search">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <a href="#">Email</a>
+            <a href="#">Library</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bell"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="content">
+                <div class="welcome">
+                    <h1>Welcome to Premier University</h1>
+                    <h3>Deparment of Computer Science & Engineering.</h3>
+                </div>
+               <div class="another-content">
+                <div class="notice-card">
+                    <h3 style="font-size: 22px;"><u>Recent Notice</u></h3>
+                    <ul>
+                        <li style="background-color: white; border: 1px solid rgb(169, 166, 166) ;padding: 15px;">MID Term Exam Date : 08.06.2024 </li>
+                        <li style="background-color: white; border: 1px solid rgb(169, 166, 166) ;padding: 15px;">যে সকল শিক্ষার্থী এখন ও টিউশন ফি পরিশোধ করেনি তাদেরকে আগামী ৩০.০৫.২০২৪ এর মধ্যে ফি পরিশোধ করার নির্দেশ দেওয়া হয়েছে।</li>
+                        <li style="background-color: white; border: 1px solid rgb(169, 166, 166) ;padding: 15px;">অতিবৃষ্টির কারণে বিভাগের আজকের (২৭/০৫/২৪ইং সোমবার) সকল ক্লাসসমূহ স্থগিত করা হল।
+                            --------------- চেয়ারম্যান স্যারের পক্ষে।</li>
+                        <!-- Add more notices as needed -->
+                    </ul>
+                    
+                </div>
+                <div id="calendar"></div>
+            </div>
+            <div class="cards-content">
+                <div class="cards">
+                    <div class="card">
+                       <h3 class="card-heading">Enrolled Courses</h3>
+                       <p class="card-body">Courses of Third Semester</p>
+                       <a id="view"href="http://127.0.0.1:5500/Enrollcourse.html">
+                        <button type="button" onclick="document.getElementById('view').href='http://127.0.0.1:5500/Enrollcourse.html'">View</button></a>
+                    </div> 
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="card">
+                           <h3 class="card-heading">Schedule</h3>
+                           <p class="card-body">Course Schedule</p>
+                           <a id="view"href="http://127.0.0.1:3000/courses.html">
+                            <button type="button" onclick="document.getElementById('view').href='http://127.0.0.1:3000/courses.html'">View</button></a>
+                        </div>
+                    </div>
+                    <div class="events">
+                        <h2>Events</h2>
+                        <div class="tabs">
+                            <button class="tab-button active" onclick="showTab('upcoming')">Upcoming</button>
+                            <button class="tab-button" onclick="showTab('schedule')">My schedule</button>
+                        </div>
+                        <div class="tab-content" id="upcoming">
+                            <div class="event-item">
+                                <span class="event-date">31st May 2024</span><br>
+                                <span class="event-name">Cultural Program</span>
+                            </div>
+                            <div class="event-item2">
+                                <span class="event-date">13rd June 2024</span><br>
+                                <span class="event-name">Concert</span>
+                            </div>
+                            <div class="event-item3">
+                                <span class="event-date">25th June 2024</span><br>
+                                <span class="event-name">University ball</span>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="schedule" style="display: none;">
+                            <!-- User's schedule events go here -->
+                        </div>
+                    </div>
+                  
+                </div>
+                </div>
+                
+                   <script src="calen.js"></script>
+                    <script src="event.js"></script>
+            </div>
+            </div>
+           
+    <script src="card.js"></script>
+    <script src="web.js"></script>
+</div></body>
+</html>

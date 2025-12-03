@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards2{
+            width: 60%;
+            margin: 100px auto 300px;
+            display: flex;
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+        .card2{
+            padding: 100px;
+            box-shadow: 0 0 .4rem .4rem rgb(0,0,0,0.2);
+            text-align: center;
+            margin: 160px ;
+            margin-top: 90px;
+        }
+        .card2-heading{
+            color: blue;
+            margin-bottom: 8px;
+            font-size: 25px;
+        }
+        .card2-body{
+            text-align: center;
+            
+        }
+    .card2 button{
+    margin-left: 0px;
+    border: 2px solid ;
+    color: white;
+    border-radius: 100px;
+    margin-top: 20px;
+    background-color: navy;
+    width: 90px;
+    padding:8px;
+    font-size: large;
+    font-weight: bold;
+}
+a{
+    
+    color: black;
+    font-size: large;
+    margin: 0;
+    font-weight: bold;
+    
+}
+.card2 p{
+    text-align: left;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="cards2">
+        <div class="card2">
+           <h3 class="card2-heading">Object Oriented Programming</h3>
+           <p class="card2-body"><a href="images/Course plan oop.pdf">1.<u>Course Plan</u></a></p>
+           <p class="card2-body"><a href="images/OOP_complex[1].pdf">2. <u>Assignment</u></a></p>
+           <p class="card2-body"><a href="http://127.0.0.1:3000/Home.html">3. <u>Lecture 1</u></a></p>
+           <a id="view"href="http://127.0.0.1:5500/Enrollcourse.html">
+            <button type="button" onclick="document.getElementById('view').href='http://127.0.0.1:5500/Enrollcourse.html'">Back</button></a>
+        </div>
+        </div>
+</body>
+</html>

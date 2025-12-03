@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <style>
+       body{
+        margin: 0;
+       }
+.container{
+        background-color:#172c3e;
+        margin: auto;
+        border: 0px solid;
+        display: flex;
+        align-items: center;  
+        height: 90px;
+        }
+.sidebar{
+    width: 200px;
+    /* background-color: #152029; */
+    background-color: #172c3e;
+    color: white;
+    padding:40px;
+    height: 150vh;
+    }
+.sidebar .profile {
+    text-align: center;
+}
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 80px;
+}
+.sidebar nav ul{
+    list-style-type: none;
+    padding:15px 0px;
+    
+
+}
+.sidebar nav ul li {
+    font-size:20px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    background-color: #20384d;
+    
+}
+.sidebar nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+h2{
+    color: white;
+    margin-bottom:0px;
+    font-size: 26px;
+}
+p{
+    margin-top: auto;
+    font-size: 20px;
+}
+.sidebar nav ul li img{
+    width: 30px;
+    margin-right: 10px;
+    background-color: white;
+
+}
+.sidebar nav ul li img{
+         width: 25px;
+         margin-right: 10px;
+        }
+.sidebar nav ul li p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 10px;
+            font-size: 100%;
+        }
+.header-right a{
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-size:23px ;
+    float: right;
+}
+.header-right input{
+    margin-left: 500px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+}
+.header-right button {
+  padding: 9px 15px;
+  background-color:#20384d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-right button:hover {
+  background-color:  #007bff;
+}
+.profile h4{
+    font-size: 17px;
+    margin: 10px 15px;
+    display: flex;
+    cursor: pointer; 
+}
+.profile h3{
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+.container img{
+    width: 90px;
+    margin: 0 0 100px;
+}
+.container h2{
+    color: rgb(244, 243, 243);
+    text-align: center;
+    padding: 0 0 130px;
+    font-size: 26px;
+}
+</style>
+</head>
+<body>
+        <div class="sidebar">
+        <div class="container">
+        <img src="images/puc_logo.png" alt="logo"><br><br>
+        <h2>Premier University <br></h2>
+       </div>
+        <div class="profile">
+            <img src="images/Puja.jpg" alt="Profile Picture">
+            &nbsp; &nbsp;  &nbsp;<h3>Puja Dewanjee</h3>
+            <h4>ID : 0222310005101028</h4>
+            <h4>Advisor : MD.Hasan</h4>
+            <h4>Batch : 43rd</h4>
+        </div>
+    
+    <nav>
+            
+            <ul>
+                <li><i class="fa-solid fa-house"></i><p>Home</p></li></b>
+                <li><i class="fa-solid fa-user"></i><p>My Profile</p></li></b>
+                <li><img src="images/icons8-enrollment-64.png"><p><a href="http://127.0.0.1:5500/Enroll.html">Enrollment</a></p></li>
+                <li><img src="images/images.png"><p><a href="http://127.0.0.1:5500/Routine.html">Class Routine</a></p></li>
+                <li><img src="images/icons8-student-registration-50.png"><p>Registration</p></li>
+                <li><i class="fa-solid fa-user-graduate"></i><p>Student Accounts</p></li>
+                <li><img src="images/download.png"><p>Evaluation</p></li>
+                <li><img src="images/icons8-report-card-50.png"><p><a href="http://127.0.0.1:5500/Result.html">Detailed Result</a></p></li>
+                <li><img src="images/download (1).png"><p>Reports</p></li>
+                <br>
+                <br>
+                <br>
+                <li><i class="fa-solid fa-arrow-right-from-bracket" style="font-size: larger;"></i><p><a href="">Logout</a></p></li>
+        </ul>
+    </nav>
+</div>
+<div class="main-content">
+    <div class="upperbar">
+        <!-- Upper bar content -->
+        <input type="text" placeholder="Search">
+        <a href="#">Email</a>
+        <a href="#">Library</a>
+    </div>
+    <div class="content">
+        <h1>Welcome to Premier University</h1>
+        <p>Your custom text goes here.</p>
+        <div id="calendar"></div>
+    </div>
+</div>
+</div>
+<script src="web.js"></script>
+</body>
+</html>
